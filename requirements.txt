@@ -1,0 +1,12 @@
+sentence-transformers
+transformers
+torch
+faiss-cpu
+rank-bm25
+datasets
+evaluate
+rouge-score
+numpy
+pandas
+tqdm
+scikit-learn
