@@ -19,7 +19,7 @@ python -m generation.generate
 python -m pytest tests
 
 
-# Part B: Answers to Required Questions
+# Answers to Required Questions
 
 ## 1. Chunking
 **What chunking strategy did you implement and why? What failure modes did you observe?**
