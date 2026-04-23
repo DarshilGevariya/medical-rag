@@ -1,6 +1,6 @@
 ## Project Overview
 
-This project implements a Medical RAG (Retrieval-Augmented Generation) system that combines semantic document retrieval with LLM-based answer generation to provide accurate, context-grounded medical responses.
+This project implements a **Medical RAG** (Retrieval-Augmented Generation) system that **combines semantic document retrieval with LLM-based answer generation** to provide accurate, context-grounded medical responses.
 
 ## What the Project Does
 Accepts natural language medical queries from users
