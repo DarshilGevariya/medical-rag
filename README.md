@@ -1,7 +1,55 @@
-## Objective
-The objective of this project is to develop a **medical question-answering system** using **Retrieval-Augmented Generation (RAG)** that combines **dense vector retrieval** with **large language models (LLMs)**. The system retrieves **relevant medical document embeddings** from a vector database and uses them as context to **generate grounded, context-aware responses**.
-It aims to **minimize hallucinations** by anchoring outputs in **domain-specific medical data**, while ensuring **high semantic relevance** through efficient embedding and retrieval mechanisms. The project also focuses on building a **scalable and modular pipeline** for **document ingestion, chunking, embedding generation, and low-latency query processing**.
-Ultimately, the goal is to enable **accurate, reliable, and explainable medical AI systems** for real-world information retrieval applications.
+## Project Overview
+
+This project implements a Medical RAG (Retrieval-Augmented Generation) system that combines semantic document retrieval with LLM-based answer generation to provide accurate, context-grounded medical responses.
+
+## What the Project Does
+Accepts natural language medical queries from users
+Retrieves relevant medical information from a document corpus
+Uses an LLM to generate answers based only on retrieved context
+Ensures responses are factually grounded and less prone to hallucination
+## Implemented
+**1.Document Ingestion Pipeline**
+Loaded medical datasets / PDFs
+Performed text extraction and preprocessing
+Applied chunking (splitting into smaller meaningful segments) for better retrieval
+**2.Embedding Generation**
+Converted text chunks into dense vector embeddings
+Used domain-relevant embedding models (e.g., biomedical or general-purpose models)
+Ensured semantic similarity capture for better search
+**3.Vector Database Integration**
+Stored embeddings in a vector database (used FAISS here)
+Enabled efficient similarity search
+Configured top-k retrieval (e.g., k = 5)
+**4.Retrieval Mechanism**
+Converted user query into embedding
+Performed cosine similarity search
+Retrieved top-k most relevant document chunks
+**5.RAG Pipeline**
+Combined:
+Retriever (vector search)
+Generator (LLM)
+Passed retrieved context into LLM prompt
+Generated context-aware and grounded answers
+**6.Prompt Engineering**
+Designed prompts to:
+Restrict model to use only retrieved context
+Improve answer relevance and factual accuracy
+**7.End-to-End Query System**
+Built a pipeline that:
+Takes user query
+Retrieves relevant chunks
+Generates final answer
+Ensured low-latency response flow
+**8.Evaluation** 
+Used metrics like:
+Recall@k (e.g., Recall@5) for retrieval performance
+Cosine similarity for ranking relevance
+Observed improved answer grounding and reduced hallucination
+# Key Outcomes
+✅ Reduced hallucination compared to standalone LLM
+✅ Improved answer accuracy using real medical data
+✅ Built a scalable and modular RAG pipeline
+✅ Enabled context-aware medical query handling
 
 ## How to run
 
