@@ -1,3 +1,8 @@
+## Objective
+The objective of this project is to develop a **medical question-answering system** using **Retrieval-Augmented Generation (RAG)** that combines **dense vector retrieval** with **large language models (LLMs)**. The system retrieves **relevant medical document embeddings** from a vector database and uses them as context to **generate grounded, context-aware responses**.
+It aims to **minimize hallucinations** by anchoring outputs in **domain-specific medical data**, while ensuring **high semantic relevance** through efficient embedding and retrieval mechanisms. The project also focuses on building a **scalable and modular pipeline** for **document ingestion, chunking, embedding generation, and low-latency query processing**.
+Ultimately, the goal is to enable **accurate, reliable, and explainable medical AI systems** for real-world information retrieval applications.
+
 ## How to run
 
 ### Setup
